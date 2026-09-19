@@ -9,6 +9,8 @@
   --ink-60: #525252;
   --paper: #ffffff;
   --yellow: #f1c21b;    /* one acid accent */
+  --link: var(--blue-70);   /* AA on paper in both themes */
+  --on-yellow: #161616;
 
   --border: 3px solid var(--ink);
   --shadow: 6px 6px 0 var(--ink);
@@ -29,6 +31,7 @@
     --ink-60: #c6c6c6;
     --paper: #0b0b0b;
     --blue-20: #001d6c;
+    --link: #78a9ff;
     --blue-10: #001141;
     --shadow: 6px 6px 0 var(--blue-60);
     --shadow-sm: 4px 4px 0 var(--blue-60);

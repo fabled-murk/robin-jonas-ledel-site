@@ -87,7 +87,7 @@ ${marquee("Kubernetes · Cilium · CI/CD · vClusters · cloud-native · Götebo
 
 <section id="about">
   <div class="wrap">
-    <p class="eyebrow">${esc(site.about.title)}</p>
+    <h2 class="eyebrow">${esc(site.about.title)}</h2>
     <div class="grid">
       <div>${site.about.body.map((p) => `<p>${esc(p)}</p>`).join("\n      ")}</div>
       <div class="card card--blue">
@@ -104,7 +104,7 @@ ${marquee("Kubernetes · Cilium · CI/CD · vClusters · cloud-native · Götebo
 
 <section id="work">
   <div class="wrap">
-    <p class="eyebrow">${esc(site.services.title)}</p>
+    <h2 class="eyebrow">${esc(site.services.title)}</h2>
     <div class="grid">
       ${site.services.items
         .map(
@@ -118,7 +118,7 @@ ${marquee("Kubernetes · Cilium · CI/CD · vClusters · cloud-native · Götebo
 
 <section id="approach">
   <div class="wrap">
-    <p class="eyebrow">${esc(site.approach.title)}</p>
+    <h2 class="eyebrow">${esc(site.approach.title)}</h2>
     <div class="grid">
       ${site.approach.items
         .map((s) => `<article class="card card--blue"><h3>${esc(s.title)}</h3><p>${esc(s.body)}</p></article>`)
@@ -129,7 +129,7 @@ ${marquee("Kubernetes · Cilium · CI/CD · vClusters · cloud-native · Götebo
 
 <section id="fabled">
   <div class="wrap">
-    <p class="eyebrow">${esc(site.fabled.title)}</p>
+    <h2 class="eyebrow">${esc(site.fabled.title)}</h2>
     <div class="grid">
       <div>
         <p>${esc(site.fabled.body)}</p>
@@ -145,7 +145,7 @@ ${marquee("Kubernetes · Cilium · CI/CD · vClusters · cloud-native · Götebo
 
 <section id="contact">
   <div class="wrap">
-    <p class="eyebrow">${esc(site.contact.title)}</p>
+    <h2 class="eyebrow">${esc(site.contact.title)}</h2>
     <h2>Say hello.</h2>
     <p class="lead">${esc(site.contact.lead)}</p>
     <div class="grid" style="margin-top:2rem">
@@ -174,7 +174,7 @@ const styleguide = () => `${head(`Styleguide — ${site.name}`, "Design tokens a
 
 <section>
   <div class="wrap">
-    <p class="eyebrow">Colour</p>
+    <h2 class="eyebrow">Colour</h2>
     <div class="grid">
       ${swatch("Blue 60 — action", "--blue-60")}
       ${swatch("Blue 70 — hover", "--blue-70")}
@@ -188,10 +188,10 @@ const styleguide = () => `${head(`Styleguide — ${site.name}`, "Design tokens a
 
 <section>
   <div class="wrap">
-    <p class="eyebrow">Type</p>
-    <h1>Heading one</h1>
-    <h2>Heading two</h2>
-    <h3>Heading three</h3>
+    <h2 class="eyebrow">Type</h2>
+    <p class="h1-demo" style="font-size:clamp(2.5rem,7.5vw,5.25rem);font-weight:700;letter-spacing:-.03em;line-height:1.02;margin:0 0 .5rem">Heading one</p>
+    <p style="font-size:clamp(1.9rem,4.5vw,3rem);font-weight:700;letter-spacing:-.03em;line-height:1.02;margin:0 0 .5rem">Heading two</p>
+    <p style="font-size:clamp(1.15rem,2vw,1.4rem);font-weight:700;letter-spacing:-.02em;margin:0 0 1rem">Heading three</p>
     <p>Body copy in IBM Plex Sans. <a href="https://fabled.se">An inline link</a> highlights on hover.</p>
     <p style="font-family:var(--mono)">IBM Plex Mono — labels, numerals, eyebrows.</p>
   </div>
@@ -199,7 +199,7 @@ const styleguide = () => `${head(`Styleguide — ${site.name}`, "Design tokens a
 
 <section id="buttons">
   <div class="wrap">
-    <p class="eyebrow">Buttons</p>
+    <h2 class="eyebrow">Buttons</h2>
     <div class="actions">
       <a class="btn" href="#buttons">Primary</a>
       <a class="btn btn--ghost" href="#buttons">Ghost</a>
@@ -210,7 +210,7 @@ const styleguide = () => `${head(`Styleguide — ${site.name}`, "Design tokens a
 
 <section>
   <div class="wrap">
-    <p class="eyebrow">Cards</p>
+    <h2 class="eyebrow">Cards</h2>
     <div class="grid">
       <article class="card"><span class="num">01</span><h3>Default card</h3><p>Paper, 3px border, 6px shadow.</p></article>
       <article class="card card--blue"><h3>Accent card</h3><p>Blue 20 block for rhythm.</p></article>
@@ -221,7 +221,7 @@ const styleguide = () => `${head(`Styleguide — ${site.name}`, "Design tokens a
 
 <section>
   <div class="wrap">
-    <p class="eyebrow">Form fields</p>
+    <h2 class="eyebrow">Form fields</h2>
     <form class="grid" onsubmit="event.preventDefault()">
       <label>Name<br /><input class="card" style="width:100%;padding:.7rem;font:inherit;margin-top:.4rem" type="text" placeholder="Jonas Ledel" /></label>
       <label>Email<br /><input class="card" style="width:100%;padding:.7rem;font:inherit;margin-top:.4rem" type="email" placeholder="jonas@fabled.se" /></label>
