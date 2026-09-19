@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Styleguide — Jonas Ledel</title>
+<meta name="description" content="Design tokens and components: IBM blue x neobrutalism." />
+<meta name="author" content="Jonas Ledel" />
+<meta name="theme-color" content="#0f62fe" />
+<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+<link rel="canonical" href="https://fabled-murk.github.io/robin-jonas-ledel-site/styleguide.html" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Styleguide — Jonas Ledel" />
+<meta property="og:description" content="Design tokens and components: IBM blue x neobrutalism." />
+<meta property="og:url" content="https://fabled-murk.github.io/robin-jonas-ledel-site/styleguide.html" />
+<meta property="og:image" content="https://fabled-murk.github.io/robin-jonas-ledel-site/og.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Styleguide — Jonas Ledel" />
+<meta name="twitter:description" content="Design tokens and components: IBM blue x neobrutalism." />
+<meta name="twitter:image" content="https://fabled-murk.github.io/robin-jonas-ledel-site/og.png" />
+<script type="module" src="/src/main.ts"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="./"><b>JL</b> Jonas Ledel</a>
+    <nav class="nav" aria-label="Primary">
+      <a href="./#about">About</a>
+      <a href="./#work">What I do</a>
+      <a href="./#fabled">Fabled</a>
+      <a href="./#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section>
+  <div class="wrap">
+    <p class="eyebrow">Styleguide</p>
+    <h1>IBM blue ×<br />neobrutalism</h1>
+    <p class="lead">Every token and component the site is built from. 3px borders, 6px hard shadows, no radius, no gradients.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">Colour</p>
+    <div class="grid">
+      <div class="card" style="padding:0;overflow:hidden"><div style="height:5rem;background:var(--blue-60);border-bottom:var(--border)"></div><div style="padding:.7rem"><strong>Blue 60 — action</strong><br /><code style="font-family:var(--mono);font-size:.75rem">var(--blue-60)</code></div></div>
+      <div class="card" style="padding:0;overflow:hidden"><div style="height:5rem;background:var(--blue-70);border-bottom:var(--border)"></div><div style="padding:.7rem"><strong>Blue 70 — hover</strong><br /><code style="font-family:var(--mono);font-size:.75rem">var(--blue-70)</code></div></div>
+      <div class="card" style="padding:0;overflow:hidden"><div style="height:5rem;background:var(--blue-20);border-bottom:var(--border)"></div><div style="padding:.7rem"><strong>Blue 20 — blocks</strong><br /><code style="font-family:var(--mono);font-size:.75rem">var(--blue-20)</code></div></div>
+      <div class="card" style="padding:0;overflow:hidden"><div style="height:5rem;background:var(--ink);border-bottom:var(--border)"></div><div style="padding:.7rem"><strong>Ink</strong><br /><code style="font-family:var(--mono);font-size:.75rem">var(--ink)</code></div></div>
+      <div class="card" style="padding:0;overflow:hidden"><div style="height:5rem;background:var(--paper);border-bottom:var(--border)"></div><div style="padding:.7rem"><strong>Paper</strong><br /><code style="font-family:var(--mono);font-size:.75rem">var(--paper)</code></div></div>
+      <div class="card" style="padding:0;overflow:hidden"><div style="height:5rem;background:var(--yellow);border-bottom:var(--border)"></div><div style="padding:.7rem"><strong>Acid yellow</strong><br /><code style="font-family:var(--mono);font-size:.75rem">var(--yellow)</code></div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">Type</p>
+    <h1>Heading one</h1>
+    <h2>Heading two</h2>
+    <h3>Heading three</h3>
+    <p>Body copy in IBM Plex Sans. <a href="https://fabled.se">An inline link</a> highlights on hover.</p>
+    <p style="font-family:var(--mono)">IBM Plex Mono — labels, numerals, eyebrows.</p>
+  </div>
+</section>
+
+<section id="buttons">
+  <div class="wrap">
+    <p class="eyebrow">Buttons</p>
+    <div class="actions">
+      <a class="btn" href="#buttons">Primary</a>
+      <a class="btn btn--ghost" href="#buttons">Ghost</a>
+      <button class="btn" type="button">Button element</button>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">Cards</p>
+    <div class="grid">
+      <article class="card"><span class="num">01</span><h3>Default card</h3><p>Paper, 3px border, 6px shadow.</p></article>
+      <article class="card card--blue"><h3>Accent card</h3><p>Blue 20 block for rhythm.</p></article>
+      <article class="card card--ink"><h3>Inverted card</h3><p>Blue 60 with white text.</p></article>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">Form fields</p>
+    <form class="grid" onsubmit="event.preventDefault()">
+      <label>Name<br /><input class="card" style="width:100%;padding:.7rem;font:inherit;margin-top:.4rem" type="text" placeholder="Jonas Ledel" /></label>
+      <label>Email<br /><input class="card" style="width:100%;padding:.7rem;font:inherit;margin-top:.4rem" type="email" placeholder="jonas@fabled.se" /></label>
+      <label>Message<br /><textarea class="card" style="width:100%;padding:.7rem;font:inherit;margin-top:.4rem" rows="3" placeholder="Hello"></textarea></label>
+    </form>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="colophon">Built with Vite and stubborn CSS. IBM Plex, IBM Blue 60, and borders thick enough to lean on. No trackers, no cookie banner, nothing to accept.</p>
+    <p class="colophon">© 2026 Jonas Ledel · <a href="styleguide.html">Styleguide</a></p>
+  </div>
+</footer>
+</body>
+</html>

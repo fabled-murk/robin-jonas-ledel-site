@@ -1,0 +1,21 @@
+{
+  "name": "robin-jonas-ledel-site",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "render": "node scripts/render.mjs",
+    "dev": "npm run render && vite",
+    "build": "npm run render && tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "check": "npm run build && node scripts/check-links.mjs",
+    "og": "node scripts/make-og.mjs"
+  },
+  "devDependencies": {
+    "@fontsource/ibm-plex-mono": "^5.3.0",
+    "@fontsource/ibm-plex-sans": "^5.3.0",
+    "sharp": "^0.35.4",
+    "typescript": "^5.6.0",
+    "vite": "^7.0.0"
+  }
+}
